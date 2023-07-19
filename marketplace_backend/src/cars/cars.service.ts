@@ -7,9 +7,6 @@ import * as data from './../../data/data.json';
 
 @Injectable()
 export class CarsService {
-  // create(createCarDto: CreateCarDto) {
-  //   return 'This action adds a new car';
-  // }
 
   findAll() {
     return data;
@@ -35,11 +32,4 @@ export class CarsService {
     });
     return results;
   }
-  // update(id: number, updateCarDto: UpdateCarDto) {
-  //   return `This action updates a #${id} car`;
-  // }
-
-  // remove(id: number) {
-  //   return `This action removes a #${id} car`;
-  // }
 }
