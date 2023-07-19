@@ -1,0 +1,53 @@
+/* GENERAL */
+
+@import url('https://fonts.cdnfonts.com/css/avenir');
+
+* {
+    font-family: Avenir, sans-serif; 
+}
+
+:root {
+    --color1: #472B53;
+    --color2: #6B315A;
+    --color3: #007684;
+    --color4: #FF6346;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* LANDING PAGE */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portada {
+    width: 100vw;
+    height: 1fr;
+}
+
+.marcas {
+    display: flex;
+}
+
+.tipoCoche {
+    text-align: center;
+}
+
+.tipoCoche > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    max-width: 800px;
+    gap: 1em;
+}
+
+.ofertas > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}

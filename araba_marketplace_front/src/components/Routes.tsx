@@ -1,6 +1,7 @@
 
 import {createBrowserRouter} from "react-router-dom";
 import { useRouteError } from "react-router-dom";
+import LandingPage from "../landing";
 
 const ErrorPage=()=> {
   const error:any = useRouteError();
@@ -21,7 +22,7 @@ const ErrorPage=()=> {
 export const router = createBrowserRouter([
     {
       path: "/",
-      element: <div></div>,
+      element: <LandingPage />,
       errorElement: <ErrorPage />,
     },
     {
