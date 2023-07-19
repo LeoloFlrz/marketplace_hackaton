@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { Controller, Get, Param } from '@nestjs/common';
 import { CarsService } from './cars.service';
 // import { CreateCarDto } from './dto/create-car.dto';

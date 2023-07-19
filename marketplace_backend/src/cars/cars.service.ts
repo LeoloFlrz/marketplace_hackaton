@@ -1,5 +1,5 @@
+/* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
-import { Module } from '@nestjs/common';
 import * as data from './../../data/data.json';
 
 // import { CreateCarDto } from './dto/create-car.dto';
@@ -20,6 +20,7 @@ export class CarsService {
     return data.find((e) => e._id == id);
   }
 
+  
   // update(id: number, updateCarDto: UpdateCarDto) {
   //   return `This action updates a #${id} car`;
   // }
