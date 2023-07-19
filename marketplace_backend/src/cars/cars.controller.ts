@@ -23,6 +23,18 @@ export class CarsController {
     return this.carsService.findOne(id);
   }
 
+  @Get('search/:property/:value')
+  searchByProperty(
+    @Param('property') property: string,
+    @Param('value') value: string,
+  ) {
+    return this.carsService.searchByProperty(property, value);
+  }
+
+  @Get('search/:keyword')
+  searchByKeyword(@Param('keyword') keyword: string): any[] {
+    return this.carsService.searchByKeyword(keyword);
+  }
 
   // @Patch(':id')
   // update(@Param('id') id: string, @Body() updateCarDto: UpdateCarDto) {

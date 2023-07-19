@@ -20,7 +20,21 @@ export class CarsService {
     return data.find((e) => e._id == id);
   }
 
-  
+  searchByProperty(property: string, value: string) {
+    return data.filter((item) => item[property] === value);
+  }
+
+  searchByKeyword(keyword: string): any[] {
+    const results = data.filter(item => {
+      for (const key in item) {
+        if (typeof item[key] === 'string' && item[key].toLowerCase().includes(keyword.toLowerCase())) {
+          return true;
+        }
+      }
+      return false;
+    });
+    return results;
+  }
   // update(id: number, updateCarDto: UpdateCarDto) {
   //   return `This action updates a #${id} car`;
   // }
