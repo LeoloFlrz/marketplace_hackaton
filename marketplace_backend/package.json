@@ -66,5 +66,12 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "@nestjs/common": {
+    "moduleFileExtensions" : [
+      "js",
+      "json",
+      "ts"
+    ]
   }
 }

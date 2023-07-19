@@ -62,7 +62,7 @@
         "type": "SUV",
         "seats": "2023-07-11T07:00:46.766Z",
         "fuel_type": 0,
-        "horsepower_rpm": 6500,
+        "horsepower": 130,
         "transmission": "6-speed shiftable automatic",
         "fuel_tank_capacity": "13.8",
         "color": ""
@@ -79,7 +79,7 @@
         "type": "SUV",
         "seats": "2023-07-11T07:00:46.766Z",
         "fuel_type": 0,
-        "horsepower_rpm": 6500,
+        "horsepower": 150,
         "transmission": "6-speed shiftable automatic",
         "fuel_tank_capacity": "13.8",
         "color": ""
