@@ -1,7 +1,7 @@
 [
     {
         "image_url": "https://www.ford.es/content/dam/guxeu/rhd/central/cars/2018-ecosport/launch/gallery/exterior/9x8/Ford-EcoSport-eu-FORD_2017_EcoSport_14_DIB-9x8-1200x1066.jpg.renditions.original.png",
-        "_id": "64acfe1efebd5d00024c3364",     
+        "_id": 1,     
         "model": "EcoSport",
         "make": "Ford",           
         "price": 15000,
@@ -18,7 +18,7 @@
     },
     {
         "image_url": "https://www.ford.es/content/dam/guxeu/rhd/central/cars/2018-ecosport/launch/gallery/exterior/9x8/Ford-EcoSport-eu-FORD_2017_EcoSport_14_DIB-9x8-1200x1066.jpg.renditions.original.png",
-        "_id": "64acfe1efebd5d00024c3364",     
+        "_id": 2,     
         "model": "EcoSport",
         "make": "Ford",           
         "price": 15000,
@@ -35,7 +35,7 @@
     },
     {
         "image_url": "https://www.ford.es/content/dam/guxeu/rhd/central/cars/2018-ecosport/launch/gallery/exterior/9x8/Ford-EcoSport-eu-FORD_2017_EcoSport_14_DIB-9x8-1200x1066.jpg.renditions.original.png",
-        "_id": "64acfe1efebd5d00024c3364",     
+        "_id": 3,     
         "model": "EcoSport",
         "make": "Ford",           
         "price": 15000,
