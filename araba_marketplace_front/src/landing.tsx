@@ -16,8 +16,7 @@ import peugeot from './img/peugeot-logo 1.svg'
 import seat from './img/seat-logo 1.svg'
 import tesla from './img/tesla-logo 1.svg'
 import CardOferta from "./components/ofertaCard";
-// import { Container } from "react-bootstrap";
-// import Navbar from 'navbar';
+
 
 
 export default function LandingPage () {
@@ -26,7 +25,7 @@ export default function LandingPage () {
         <div className="container">
             <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
                 {/* <img src={fondo} alt="" /> */}
-                Hola mundo
+               h 
             </section>
             <section></section>
             <section className="marca">
