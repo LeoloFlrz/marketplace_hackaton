@@ -12,11 +12,12 @@ export class CarsService {
   // }
 
   findAll() {
-    return `This action returns all cars`;
+    return data;
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} car`;
+  findOne(id: string) {
+    // return `This action returns a #${id} beer`;
+    return data.find((e) => e._id == id);
   }
 
   // update(id: number, updateCarDto: UpdateCarDto) {
