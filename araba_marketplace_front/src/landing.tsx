@@ -16,18 +16,58 @@ import peugeot from './img/peugeot-logo 1.svg'
 import seat from './img/seat-logo 1.svg'
 import tesla from './img/tesla-logo 1.svg'
 import CardOferta from "./components/ofertaCard";
+import { Container } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck } from "@fortawesome/free-solid-svg-icons";
 
 
 
 export default function LandingPage () {
     return (
-        // <Container />
-        <div className="container">
-            <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
+        <>
+        <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
                 {/* <img src={fondo} alt="" /> */}
                h 
             </section>
-            <section></section>
+            <Container>
+            <section className="cardsLanding">
+            <div className="cardLanding">
+            <div className="icono">
+                <FontAwesomeIcon icon={faMedal} />
+            </div>
+            <div>
+                <strong>GARANTÍA</strong>
+                <p>DE CONFIANZA</p>
+            </div>
+        </div>
+        <div className="cardLanding">
+            <div className="icono">
+                <FontAwesomeIcon icon={faCarSide} />
+            </div>
+            <div>
+                <strong>HOY TENEMOS</strong>
+                <p>2 COCHES NUEVOS</p>
+            </div>
+        </div>
+        <div className="cardLanding">
+            <div className="icono">
+            <FontAwesomeIcon icon={faPersonCircleCheck} />
+            </div>
+            <div>
+                <strong>¿QUIERES VENIR</strong>
+                <p>A RECOGERLO?</p>
+            </div>
+        </div>
+        <div className="cardLanding">
+            <div className="icono">
+                <FontAwesomeIcon icon={faMoneyCheckAlt} />
+            </div>
+            <div>
+                <strong>FINANCIACIÓN</strong>
+                <p>FLEXIBLE Y PERSONAL</p>
+            </div>
+        </div>
+            </section>
             <section className="marca">
                 <h2>Encuentra tu marca</h2>
                 <div className="marcas">
@@ -87,8 +127,16 @@ export default function LandingPage () {
                     <CardOferta />
                     <CardOferta />
                 </div>
+                <button>Ver todas las ofertas</button>
             </section>
-            <button>Ver todas las ofertas</button>
-        </div>
+            <section className="promo">
+                <img src="" alt="" />
+                <div>
+                    <h2>VEN A RECOGER TU COCHE Y</h2>
+                    <h2>TE INVITAMOS A CONOCER NUESTRA CIUDAD</h2>
+                </div>
+            </section>
+        </Container>
+        </>   
     )
 }

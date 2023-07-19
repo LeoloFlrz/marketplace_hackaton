@@ -20,10 +20,11 @@ body {
 
 /* LANDING PAGE */
 
-.container {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2em;
 }
 
 .portada {
@@ -31,8 +32,30 @@ body {
     height: 1fr;
 }
 
+.cardsLanding {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-top: -3em;
+}
+
+.cardLanding {
+    background-color: var(--color3);
+    color: white;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15em;
+}
+
+.cardLanding > .icono {
+    font-size: 32px;
+}
+
 .marcas {
     display: flex;
+    gap: 1em;
 }
 
 .tipoCoche {
@@ -50,4 +73,11 @@ body {
 .ofertas > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.promo {
+    background-color: var(--color4);
+    color: white;
+    flex-direction: row;
 }

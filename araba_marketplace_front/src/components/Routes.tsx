@@ -2,6 +2,7 @@
 import {createBrowserRouter} from "react-router-dom";
 import { useRouteError } from "react-router-dom";
 import LandingPage from "../landing";
+import '../styles.css';
 
 const ErrorPage=()=> {
   const error:any = useRouteError();
