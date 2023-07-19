@@ -21,7 +21,7 @@ const Cardetail: React.FC<Product> = (__props: Product) => {
 
   useEffect(() => {
     // Fetch the data from './vehicules.json'
-    fetch('http://localhost:5173/Components/vehicules.json')
+    fetch('http://localhost:3000/Components/vehicules.json')
       .then((response) => response.json())
       .then((data) => setProducts(data));
   }, []);
