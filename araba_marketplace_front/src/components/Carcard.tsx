@@ -70,21 +70,21 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
           <Modal.Title><strong> Car Details </strong></Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {/* Aquí puedes mostrar más detalles sobre el automóvil dentro de la ventana modal */}
+          
           <p><strong>Model:</strong> {model}</p>
           <p><strong>Doors: </strong>{doors}</p>
           <p><strong>Year:</strong> {year}</p>
-          <p><strong>City</strong> {city}</p>
+          <p><strong></strong> {city}</p>
           <p><strong>Horsepower:</strong> {horsepower}</p>
           <p><strong>FuelType: </strong>{fuel_type}</p>
           <p><strong>Price:</strong> {price}</p>
-          <p><strong >Image: </strong>{image_url}</p>
-          {/* Agrega más detalles según tus necesidades */}
+          <img src={image_url} className='modal_img' height='200px'></img>
+    
         </Modal.Body>
         <Modal.Footer>
 
-          <Button className='button' variant="primary" onClick={handleShowModal}>
-              buy
+          <Button className='button' variant="primary" href='/' onClick={handleShowModal}>
+            Contact
           </Button>
           <Button id="secondbutton" variant="secondary" onClick={handleCloseModal}>
             Closed
