@@ -1,11 +1,11 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './carcard.css';
-import skoda_prueba from '../assets/skoda_prueba.jpg';
 import puerta from '../assets/puerta coche3dpi 2.svg';
 import check from '../assets/check3dpi 2.svg';
 import taco from '../assets/tacometro3dpi 1.svg';
-import comb from '../assets/gasolina3dpi 1.svg';
+import auto from '../assets/car-13dpi.svg';
+// import comb from '../assets/gasolina3dpi 1.svg';
 import React from 'react';
      
 interface Car {
@@ -45,17 +45,19 @@ interface CarCardProps {
           </ul>
           <ul className='cardList'>
             <li>
-              <img src = {car} width="15" height="15"/>
+              <img src = {auto} width="15" height="15"/>
               {km} KM
             </li>
             <li>
               <img src = {taco} width="15" height="15"/>
               {horsepower} CV
             </li>
-            <li>
+
+            
+            {/* <li>
               <img src = {comb} width="15" height="15"/>
               {fuelType}
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className='pricesandbutton'>
