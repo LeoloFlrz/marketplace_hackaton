@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {CarCard} from './Carcard';
+import {CarCard} from './CarCard';
 
 interface Car {
   _id: string;
