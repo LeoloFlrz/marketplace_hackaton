@@ -3,6 +3,8 @@ import car from '../img/CAR-1.svg'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+import car from '../assets/img/CAR-1.svg'
+
 export default function CardOferta () {
     return (      
         <Card className='cardOferta'>
