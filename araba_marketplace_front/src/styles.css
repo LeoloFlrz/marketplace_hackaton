@@ -27,14 +27,19 @@ section {
 
 .portada {
     width: 100vw;
-    height: 1fr;
+    height: 88vh;
+    overflow: hidden;
+}
+.hero-image{
+    height: auto;
 }
 
 .cardsLanding {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
-    margin-top: -3em;
+    margin-top: -10em;
+    margin-left:15vw;
 }
 
 .cardLanding {
@@ -44,7 +49,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 15em;
+    height: 10em;
 }
 
 .cardLanding > .icono {
@@ -74,47 +79,6 @@ section {
     gap: 1em;
 }
 
-.promo {
-    background-color: var(--color4);
-    color: white;
-    flex-direction: row;
-}
-
-.ventajas > div {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    padding: 1em;
-    background-color: aliceblue;
-}
-
-.satisfaccion {
-    background-color: var(--color1);
-    color: white;
-}
-
-.asesor > div {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-}
-
-.boton1 {
-    background-color: var(--color3);
-}
-
-.boton2 {
-    background-color: var(--color4);
-}
-
-.contactos {
-    background-color: var(--color4);
-    color: white;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2em 10em;
-}
-
 .modal-footer {
     color: white;
     
@@ -127,3 +91,4 @@ section {
     font-size: small;
     padding-right: 100px;
 }
+

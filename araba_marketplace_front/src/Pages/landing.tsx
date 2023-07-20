@@ -27,7 +27,7 @@ export default function LandingPage () {
     return (
         <>
         <section className="portada" >
-                <img src={fondo} alt="" height={'100%'} style={{margin:'-3%'}}/>
+                <img src={fondo} alt="Car hero image" style={{margin:'-3%'}} className='hero-image'/>
                 
             </section>
             <Container> 
