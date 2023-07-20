@@ -14,19 +14,53 @@ import skoda from '../assets/img/logo skoda3dpi 1.svg'
 import peugeot from '../assets/img/peugeot-logo 1.svg'
 import seat from '../assets/img/seat-logo 1.svg'
 import tesla from '../assets/img/tesla-logo 1.svg'
-import CardOferta from "../components/ofertaCard";
+import CardOferta from "../components/CardOferta";
+import { Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {  faMedal,faCarSide,faMoneyCheckAlt} from "@fortawesome/free-solid-svg-icons";
+import '../styles.css'
 
 
 
 export default function LandingPage () {
     return (
-        // <Container />
-        <div className="container">
-            <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
-                {/* <img src={fondo} alt="" /> */}
-               h 
+        <>
+        <section className="portada" >
+                <img src={fondo} alt="" height={'100%'} style={{margin:'-3%'}}/>
+                
             </section>
-            <section></section>
+            <Container> 
+            <section className="cardsLanding">
+            <div className="cardLanding">
+            <div className="icono">
+                <FontAwesomeIcon icon={faMedal} />
+            </div>
+            <div>
+                <strong>GARANTÍA</strong>
+                <p>DE CONFIANZA</p>
+            </div>
+        </div>
+        <div className="cardLanding">
+            <div className="icono">
+                <FontAwesomeIcon icon={faCarSide} />
+            </div>
+            <div>
+                <strong>HOY TENEMOS</strong>
+                <p>2 COCHES NUEVOS</p>
+            </div>
+        </div>
+        
+        <div className="cardLanding">
+            <div className="icono">
+                <FontAwesomeIcon icon={faMoneyCheckAlt} />
+            </div>
+            <div>
+                <strong>FINANCIACIÓN</strong>
+                <p>FLEXIBLE Y PERSONAL</p>
+            </div>
+        </div>
+            </section>
             <section className="marca">
                 <h2>Encuentra tu marca</h2>
                 <div className="marcas">
@@ -86,8 +120,11 @@ export default function LandingPage () {
                     <CardOferta />
                     <CardOferta />
                 </div>
+                <Button>Ver todas las ofertas</Button>
             </section>
-            <button>Ver todas las ofertas</button>
-        </div>
+          </Container>
+            
+        
+        </>
     )
 }
