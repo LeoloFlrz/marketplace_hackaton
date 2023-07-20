@@ -2,6 +2,9 @@ import {createBrowserRouter} from "react-router-dom";
 import { useRouteError } from "react-router-dom";
 import LandingPage from "../Pages/landing"
 import AllCars from "../Pages/AllCars";
+// import Cardetail from "./src/components/Cardetail.tsx";
+
+
 
 const ErrorPage=()=> {
   const error:any = useRouteError();
@@ -29,6 +32,10 @@ export const router = createBrowserRouter([
       path: "/cars",
       element: <AllCars/>,
     },
+    // {
+    //   path: "/Cardetail",
+    //   element: <Cardetail/>,
+    // },
     // {
     //   path: "/cars/:id",
     //   element:   
