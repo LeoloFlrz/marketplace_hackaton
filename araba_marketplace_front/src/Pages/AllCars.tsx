@@ -1,6 +1,8 @@
 import React from 'react';
 import CarList from '../components/CarList';
 import SearchBar from '../components/SearchBar';
+import Contact from '../components/Contact';
+
 
 const CarGrid: React.FC = () => {
   return (
@@ -8,6 +10,7 @@ const CarGrid: React.FC = () => {
       <div className="row">
         <div className="col-md-3">
         <SearchBar />
+        <Contact />
       </div>
       <div className="col-md-9">
         <CarList />

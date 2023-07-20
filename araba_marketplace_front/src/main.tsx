@@ -5,7 +5,6 @@ import {router} from "../src/components/Routes"
 import {RouterProvider} from "react-router-dom"
 import React from "react"
 import { NavbarComponent } from "./components/NavbarComponent";
-import Contact from "./components/Contact";
 import { Footer } from "./components/Footer";
 // import { CarCard } from "./components/CarCard";
 
