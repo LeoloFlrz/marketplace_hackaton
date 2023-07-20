@@ -15,16 +15,12 @@ import skoda from '../assets/img/logo skoda3dpi 1.svg'
 import peugeot from '../assets/img/peugeot-logo 1.svg'
 import seat from '../assets/img/seat-logo 1.svg'
 import tesla from '../assets/img/tesla-logo 1.svg'
-import CardOferta from "../components/CardOferta";
 import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck, faPhone, faEnvelope, faArrowRightArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import CardOpinion from "../components/CardOpinion";
-import { Link } from 'react-router-dom';
-// import CarouselCoches from "../components/CarouselCoches";
-// import CarouselPortada from "../components/CarouselPortada";
 
 
 
@@ -144,18 +140,7 @@ export default function LandingPage () {
                     </div>
                 </div>
             </section>
-            <section className="ofertas">
-                <h2>¡Super ofertas de julio!</h2>
-                <div className='carruselCoches'>
-                    <CardOferta />
-                    <CardOferta />
-                    <CardOferta />
-                </div>
-                {/* <CarouselCoches /> */}
-                <Button>
-                    <Link to='/cars'>Ver todas las ofertas</Link> 
-                </Button>
-            </section>
+           
             <section className="ventajas">
                 <h2>Sólo son ventajas especiales</h2>
                 <div>

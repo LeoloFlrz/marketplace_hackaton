@@ -2,6 +2,7 @@ import {createBrowserRouter} from "react-router-dom";
 import { useRouteError } from "react-router-dom";
 import LandingPage from "../Pages/landing"
 import AllCars from "../Pages/AllCars";
+import Contact from "./Contact";
 
 const ErrorPage=()=> {
   const error:any = useRouteError();
@@ -28,13 +29,8 @@ export const router = createBrowserRouter([
       path: "/cars",
       element: <AllCars/>,
     },
-    // {
-    //   path: "/cars/{id}",
-    //   element: <Cardetail id={""}/>,
-    // },
-    // {
-    //   path: "/cars/:id",
-    //   element:   
-    // },
-  
+    {
+      path: "/contact",
+      element: <Contact/>,
+    },
   ]);

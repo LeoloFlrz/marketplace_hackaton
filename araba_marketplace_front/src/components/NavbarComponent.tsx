@@ -23,7 +23,8 @@ export function NavbarComponent() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/cars">Cars</Nav.Link>
+            <Nav.Link href="/cars">Coches</Nav.Link>
+            <Nav.Link href="/contact">Contáctanos</Nav.Link>
           </Nav>
            <Form className="d-flex">
             <Form.Control
