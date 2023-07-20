@@ -1,5 +1,5 @@
 import React from "react";
-import fondo1 from '../img/foto_portada.jpg'
+import fondo1 from '../assets/img/foto_portada.jpg'
 
 export default function Fondo1 () {
     return (

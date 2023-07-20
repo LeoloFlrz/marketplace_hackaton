@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
-import CardOferta from './ofertaCard';
+import CardOferta from './CardOferta';
 
 function CarouselCoches() {
   return (

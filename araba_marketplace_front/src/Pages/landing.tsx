@@ -1,31 +1,4 @@
-<<<<<<< HEAD:araba_marketplace_front/src/landing.tsx
 import React from "react";
-import fondo from './img/foto_portada.jpg'
-import familiar from './img/01-familiar.svg'
-import berlina from './img/02-berlina.svg'
-import cabrio from './img/03-cabrio.svg'
-import monovolumen from './img/04-monovolumen.svg'
-import todoterreno from './img/05-todoterreno-suv.svg'
-import deportivo from './img/06-deportivo.svg'
-import compacto from './img/07-compacto.svg'
-import industrial from './img/08-industrial.svg'
-import dacia from './img/DACIA.svg'
-import bmw from './img/bmw-logo-2022 1.svg'
-import ford from './img/ford.svg'
-import skoda from './img/logo skoda3dpi 1.svg'
-import peugeot from './img/peugeot-logo 1.svg'
-import seat from './img/seat-logo 1.svg'
-import tesla from './img/tesla-logo 1.svg'
-// import CardOferta from "./components/ofertaCard";
-import { Button } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
-import CardOpinion from "./components/CardOpinion";
-import CarouselCoches from "./components/CarouselCoches";
-import CarouselPortada from "./components/CarouselPortada";
-=======
 import fondo from '../assets/img/foto_portada.jpg'
 import familiar from '../assets/img/01-familiar.svg'
 import berlina from '../assets/img/02-berlina.svg'
@@ -42,20 +15,21 @@ import skoda from '../assets/img/logo skoda3dpi 1.svg'
 import peugeot from '../assets/img/peugeot-logo 1.svg'
 import seat from '../assets/img/seat-logo 1.svg'
 import tesla from '../assets/img/tesla-logo 1.svg'
-import CardOferta from "../components/CardOferta";
+// import CardOferta from "../components/CardOferta";
 import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faMedal,faCarSide,faMoneyCheckAlt} from "@fortawesome/free-solid-svg-icons";
-import '../styles.css'
->>>>>>> 552fc3c407202ad1a3a51549506688aa46c8c8e3:araba_marketplace_front/src/Pages/landing.tsx
+import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck, faPhone, faEnvelope, faArrowRightArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import CardOpinion from "../components/CardOpinion";
+import CarouselCoches from "../components/CarouselCoches";
+// import CarouselPortada from "../components/CarouselPortada";
 
 
 
 export default function LandingPage () {
     return (
         <>
-<<<<<<< HEAD:araba_marketplace_front/src/landing.tsx
         <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
                 <div>h</div>
                 <div className="contact">
@@ -66,11 +40,6 @@ export default function LandingPage () {
                         <FontAwesomeIcon icon={faTelegram} />
                     </div>
                 </div>
-=======
-        <section className="portada" >
-                <img src={fondo} alt="Car hero image" style={{margin:'-3%'}} className='hero-image'/>
-                
->>>>>>> 552fc3c407202ad1a3a51549506688aa46c8c8e3:araba_marketplace_front/src/Pages/landing.tsx
             </section>
             <Container> 
             <section className="cardsLanding">
@@ -92,7 +61,15 @@ export default function LandingPage () {
                 <p>2 COCHES NUEVOS PARA ELEGIR</p>
             </div>
         </div>
-        
+        <div className="cardLanding">
+            <div className="icono">
+                <FontAwesomeIcon icon={faPersonCircleCheck} />
+            </div>
+            <div>
+                <strong>¿QUIERES VENIR</strong>
+                <p>A RECOGERLO?</p>
+            </div>
+        </div>
         <div className="cardLanding">
             <div className="icono">
                 <FontAwesomeIcon icon={faMoneyCheckAlt} />
@@ -172,24 +149,34 @@ export default function LandingPage () {
                     <CardOferta />
                     <CardOferta />
                     <CardOferta />
-<<<<<<< HEAD:araba_marketplace_front/src/landing.tsx
                 </div> */}
                 <CarouselCoches />
                 <Button>Ver todas las ofertas</Button>
             </section>
-            <section className="promo">
-                <img src="" alt="" />
-                <div>
-                    <h2>VEN A RECOGER TU COCHE Y</h2>
-                    <h2>TE INVITAMOS A CONOCER NUESTRA CIUDAD</h2>
-                </div>
-            </section>
             <section className="ventajas">
                 <h2>Sólo son ventajas especiales</h2>
                 <div>
-                    <div>a</div>
-                    <div>b</div>
-                    <div>c</div>
+                    <div className="cardVentaja">
+                        <div className="icono">
+                            <FontAwesomeIcon icon={faArrowRightArrowLeft} />
+                        </div>
+                        <h4>¿Si no te gusta tu compra?</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div className="cardVentaja">
+                    <div className="icono">
+                    <FontAwesomeIcon icon={faMedal} />
+                    </div>
+                        <h4>Garantía y certificación</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div className="cardVentaja">
+                    <div className="icono">
+                    <FontAwesomeIcon icon={faMoneyCheckAlt} />
+                    </div>
+                        <h4>Financiación 100% sin entrada</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
                 </div>
             </section>
             <section className="satisfaccion">
@@ -228,14 +215,5 @@ export default function LandingPage () {
             </section>
         </Container>
         </>   
-=======
-                </div>
-                <Button>Ver todas las ofertas</Button>
-            </section>
-          </Container>
-            
-        
-        </>
->>>>>>> 552fc3c407202ad1a3a51549506688aa46c8c8e3:araba_marketplace_front/src/Pages/landing.tsx
     )
 }
