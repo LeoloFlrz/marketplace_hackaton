@@ -15,6 +15,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <Cardetail />  */}
     <RouterProvider router={router} />
    
-    <Footer/>  
   </React.StrictMode>,
 )
