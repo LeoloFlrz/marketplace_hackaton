@@ -8,15 +8,26 @@ import { CarsService } from './cars.service';
 export class CarsController {
   constructor(private readonly carsService: CarsService) {}
 
-
   @Get()
-  findAll() {
+  async findAll(): Promise<any[]> {
     return this.carsService.findAll();
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
+  async findOne(@Param('id') id: string): Promise<any> {
     return this.carsService.findOne(id);
   }
 
+  @Get('search/:property/:value')
+  async searchByProperty(
+    @Param('property') property: string,
+    @Param('value') value: string,
+  ): Promise<any[]> {
+    return this.carsService.searchByProperty(property, value);
+  }
+
+  @Get('search/:keyword')
+  async searchByKeyword(@Param('keyword') keyword: string): Promise<any[]> {
+    return this.carsService.searchByKeyword(keyword);
+  }
 }
