@@ -1,5 +1,5 @@
 import React from 'react';
-import CarList from '../components/CarList';
+import {CarList} from '../components/CarList';
 import SearchBar from '../components/SearchBar';
 import Contact from '../components/Contact';
 

@@ -2,7 +2,24 @@ import {createBrowserRouter} from "react-router-dom";
 import { useRouteError } from "react-router-dom";
 import LandingPage from "../Pages/landing"
 import AllCars from "../Pages/AllCars";
-// import Cardetail from "./src/components/Cardetail.tsx";
+import { Cardetail } from "./Cardetail";
+// import {Cardetail} from "./Cardetail";
+
+interface Car {
+  _id: string;
+  model: string;
+  doors: number;
+  year: number;
+  km: number;
+  horsepower: number;
+  fuelType: string;
+  price: number;
+  image_url: string;
+}
+
+ interface Cardetails {
+  car: Car;
+}
 
 
 
@@ -32,10 +49,10 @@ export const router = createBrowserRouter([
       path: "/cars",
       element: <AllCars/>,
     },
-    // {
-    //   path: "/Cardetail",
-    //   element: <Cardetail/>,
-    // },
+    {
+      path: "/cars/{id}",
+      element: <Cardetail id={""}/>,
+    },
     // {
     //   path: "/cars/:id",
     //   element:   
