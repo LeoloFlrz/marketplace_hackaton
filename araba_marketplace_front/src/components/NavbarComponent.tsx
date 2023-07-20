@@ -4,7 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/Logo_optionOne.svg';
 
 
-
 export function NavbarComponent() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
@@ -25,9 +24,12 @@ export function NavbarComponent() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/cars">Cars</Nav.Link>
           </Nav>
+
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    
   );
 }
 

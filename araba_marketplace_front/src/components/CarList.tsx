@@ -10,7 +10,7 @@ interface Car {
   horsepower: number;
   fuelType: string;
   price: number;
-  image_url:"string"
+  image_url:string;
 }
 
 
