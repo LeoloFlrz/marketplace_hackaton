@@ -1,16 +1,16 @@
 // import React, { useEffect, useState } from 'react';
-
+// import { CarCard } from './CarCard';
 
 // interface Car {
 //   _id: string;
 //   model: string;
 //   doors: number;
 //   year: number;
-//   km: number;
 //   horsepower: number;
-//   fuelType: string;
+//   fuel_type: string;
 //   price: number;
 //   image_url:"string"
+//   city: string;
 // }
 
 // const  Search: React.FC = ()=> {
@@ -25,12 +25,12 @@
 
 //   return (
 //     <div className="row">
-//       {cars.map((car) => (
-//         <div className="col-md-4 mb-4" key={car._id}>
-//         </div>
-        
-//       ))}
-//     </div>
+//     {cars.map((car) => (
+//       <div className="col-md-9" key={car._id}>
+//           <CarCard car={car} />
+//       </div>
+//     ))}
+//   </div>
 //   );
 // };
 

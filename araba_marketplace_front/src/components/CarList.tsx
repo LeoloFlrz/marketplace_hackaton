@@ -6,10 +6,10 @@ interface Car {
   model: string;
   doors: number;
   year: number;
-  km: number;
   horsepower: number;
-  fuelType: string;
+  fuel_type: string;
   price: number;
+  city: string;
   image_url:string;
 }
 
@@ -27,7 +27,7 @@ export const  CarList: React.FC = ()=> {
   return (
     <div className="row">
       {cars.map((car) => (
-        <div className="col-md-4 mb-4" key={car._id}>
+        <div className="col-md-4 mb-4" key={car.model}>
             <CarCard  car={car}  />
         </div>
         
