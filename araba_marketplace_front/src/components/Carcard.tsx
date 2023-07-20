@@ -26,16 +26,6 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
 
   const [showModal, setShowModal] = useState(false);
 
-
-  // const ShowAlert = () => {
-  //   setAlert(true);
-  // };
-
-  // const CloseAlert = () => {
-  //   setAlert(false);
-  // };
-  
-   
   // Funciones para mostrar/ocultar la ventana modal
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
@@ -52,7 +42,7 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
               <li>{year} YEAR</li>
             </ul>
             <ul className='cardList'>
-              <li>{city} City</li>
+              <li>{city} Ciudad</li>
               <li>{horsepower} CV</li>
               <li>{fuel_type}</li>
             </ul>
@@ -84,20 +74,18 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
           <p><strong>Model:</strong> {model}</p>
           <p><strong>Doors: </strong>{doors}</p>
           <p><strong>Year:</strong> {year}</p>
+          <p><strong>City</strong> {city}</p>
           <p><strong>Horsepower:</strong> {horsepower}</p>
           <p><strong>FuelType: </strong>{fuel_type}</p>
           <p><strong>Price:</strong> {price}</p>
-          <p><strong>City</strong> {city}</p>
-          <p><strong >Image:</strong>{image_url}</p>
+          <p><strong >Image: </strong>{image_url}</p>
           {/* Agrega más detalles según tus necesidades */}
         </Modal.Body>
-
-        {/* <Modal show={showModal} onHide={handleCloseModal}> */}
-        <Button className='button' variant="primary" onClick={handleShowModal}>
-             Buy
-            </Button>
-
         <Modal.Footer>
+
+          <Button className='button' variant="primary" onClick={handleShowModal}>
+              buy
+          </Button>
           <Button id="secondbutton" variant="secondary" onClick={handleCloseModal}>
             Closed
           </Button>
@@ -108,5 +96,3 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
     </div>
   );
 };
-
-
