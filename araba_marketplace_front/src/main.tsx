@@ -6,12 +6,15 @@ import {RouterProvider} from "react-router-dom"
 import React from "react"
 import { NavbarComponent } from "./components/NavbarComponent";
 import { Footer } from "./components/Footer";
-// import { CarCard } from "./components/CarCard";
+// import Cardetail from "./components/Cardetail";
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <NavbarComponent/>
+    {/* <Cardetail />  */}
     <RouterProvider router={router} />
+   
     <Footer/>  
   </React.StrictMode>,
 )
