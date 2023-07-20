@@ -30,10 +30,7 @@ import CarouselPortada from "./components/CarouselPortada";
 export default function LandingPage () {
     return (
         <>
-        <section>
-            <CarouselPortada />
-        </section>
-        {/* <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
+        <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
                 <div>h</div>
                 <div className="contact">
                     <div className="whatsapp">
@@ -43,7 +40,7 @@ export default function LandingPage () {
                         <FontAwesomeIcon icon={faTelegram} />
                     </div>
                 </div>
-            </section> */}
+            </section>
             <Container>
             <section className="cardsLanding">
             <div className="cardLanding">
