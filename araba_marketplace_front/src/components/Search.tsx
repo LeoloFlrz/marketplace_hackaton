@@ -25,12 +25,13 @@
 
 //   return (
 //     <div className="row">
-//       {cars.map((car) => (
-//         <div className="col-md-4 mb-4" key={car._id}>
-//         </div>
-        
-//       ))}
-//     </div>
+//     {cars.map((car) => (
+//       <div className="col-md-4 mb-4" key={car._id}>
+//           <CarCard  car={car}  />
+//       </div>
+//      
+//     ))}
+//   </div>
 //   );
 // };
 

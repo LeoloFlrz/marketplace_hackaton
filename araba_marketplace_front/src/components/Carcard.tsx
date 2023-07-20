@@ -10,10 +10,10 @@ interface Car {
   model: string;
   doors: number;
   year: number;
-  km: number;
   horsepower: number;
-  fuelType: string;
+  fuel_type: string;
   price: number;
+  city: string;
   image_url: string;
 }
 
@@ -22,10 +22,20 @@ interface CarCardProps {
 }
 
 export const CarCard: React.FC<CarCardProps> = ({ car }) => {
-  const { model, doors, year, km, horsepower, fuelType, price, image_url } = car;
+  const { model, doors, year, horsepower, fuel_type, price, city, image_url } = car;
 
   const [showModal, setShowModal] = useState(false);
 
+
+  // const ShowAlert = () => {
+  //   setAlert(true);
+  // };
+
+  // const CloseAlert = () => {
+  //   setAlert(false);
+  // };
+  
+   
   // Funciones para mostrar/ocultar la ventana modal
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
@@ -42,9 +52,9 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
               <li>{year} YEAR</li>
             </ul>
             <ul className='cardList'>
-              <li>{km} KM</li>
+              <li>{city} City</li>
               <li>{horsepower} CV</li>
-              <li>{fuelType}</li>
+              <li>{fuel_type}</li>
             </ul>
           </div>
           <div className='pricesandbutton'>
@@ -53,6 +63,7 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
               {/* Ajusta la forma en que se muestra el pago mensual */}
               <p className='payments'>from 305,00€/mes </p>
             </div>
+            
             <Button className='button' variant="primary" onClick={handleShowModal}>
               More about
             </Button>
@@ -73,13 +84,19 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
           <p><strong>Model:</strong> {model}</p>
           <p><strong>Doors: </strong>{doors}</p>
           <p><strong>Year:</strong> {year}</p>
-          <p><strong>km:</strong> {km}</p>
           <p><strong>Horsepower:</strong> {horsepower}</p>
-          <p><strong>FuelType: </strong>{fuelType}</p>
+          <p><strong>FuelType: </strong>{fuel_type}</p>
           <p><strong>Price:</strong> {price}</p>
-          <p><strong >Image: </strong>{image_url}</p>
+          <p><strong>City</strong> {city}</p>
+          <p><strong >Image:</strong>{image_url}</p>
           {/* Agrega más detalles según tus necesidades */}
         </Modal.Body>
+
+        {/* <Modal show={showModal} onHide={handleCloseModal}> */}
+        <Button className='button' variant="primary" onClick={handleShowModal}>
+             Buy
+            </Button>
+
         <Modal.Footer>
           <Button id="secondbutton" variant="secondary" onClick={handleCloseModal}>
             Closed
@@ -91,4 +108,5 @@ export const CarCard: React.FC<CarCardProps> = ({ car }) => {
     </div>
   );
 };
+
 
