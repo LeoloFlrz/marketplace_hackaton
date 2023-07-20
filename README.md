@@ -1,6 +1,6 @@
 # Araba Marketplace - Buy and Sell Cars
 
-This project is a Car Marketplace, developed using React, NestJS, MongoDB and Bootstrap technologies. The main goal of this platform is to allow users to easily and securely buy and sell cars.
+This project is a Car Marketplace, developed using React, NestJS and Bootstrap technologies. The main goal of this platform is to allow users to easily and securely buy and sell cars.
 
 ## Features
 
@@ -12,7 +12,6 @@ This project is a Car Marketplace, developed using React, NestJS, MongoDB and Bo
 
 ![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## Installation
