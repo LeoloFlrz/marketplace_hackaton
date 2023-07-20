@@ -16,9 +16,10 @@ import peugeot from './img/peugeot-logo 1.svg'
 import seat from './img/seat-logo 1.svg'
 import tesla from './img/tesla-logo 1.svg'
 import CardOferta from "./components/ofertaCard";
+import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck, faPhone, faEnvelope, faWhatsApp } from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -127,7 +128,7 @@ export default function LandingPage () {
                     <CardOferta />
                     <CardOferta />
                 </div>
-                <button>Ver todas las ofertas</button>
+                <Button>Ver todas las ofertas</Button>
             </section>
             <section className="promo">
                 <img src="" alt="" />
@@ -135,6 +136,39 @@ export default function LandingPage () {
                     <h2>VEN A RECOGER TU COCHE Y</h2>
                     <h2>TE INVITAMOS A CONOCER NUESTRA CIUDAD</h2>
                 </div>
+            </section>
+            <section className="ventajas">
+                <h2>Sólo son ventajas especiales</h2>
+                <div>
+                    <div>a</div>
+                    <div>b</div>
+                    <div>c</div>
+                </div>
+            </section>
+            <section className="satisfaccion">
+                <h2>LA MAYOR SATISFACCIÓN Y RESULTADOS</h2>
+            </section>
+            <section className="asesor">
+                <h2>¿NECESITAS UN ASESOR COMERCIAL?</h2>
+                <h2>Llama gratis al 987 65 43 21</h2>
+                <div>
+                    <Button className="boton1">Hola</Button>
+                    <Button className="boton2">Adiós</Button>
+                </div>
+            </section>
+            <section className="contactos">
+                <div>
+                    <FontAwesomeIcon icon={faPhone} />
+                    Teléfono
+                    </div>
+                <div>
+                <FontAwesomeIcon icon={faWhatsApp} />
+                    WhatsApp
+                    </div>
+                <div>
+                <FontAwesomeIcon icon={faEnvelope} />
+                    Correo
+                    </div>
             </section>
         </Container>
         </>   

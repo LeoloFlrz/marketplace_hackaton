@@ -81,3 +81,42 @@ section {
     color: white;
     flex-direction: row;
 }
+
+.ventajas > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 1em;
+    background-color: aliceblue;
+}
+
+.satisfaccion {
+    background-color: var(--color1);
+    color: white;
+}
+
+.asesor > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.boton1 {
+    background-color: var(--color3);
+}
+
+.boton2 {
+    background-color: var(--color4);
+}
+
+.contactos {
+    background-color: var(--color4);
+    color: white;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 10em;
+}
+
+.modal-footer {
+    color: white;
+}
