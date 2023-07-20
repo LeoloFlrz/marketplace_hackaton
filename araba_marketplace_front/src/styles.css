@@ -36,6 +36,11 @@ body {
     background-color: var(--color3);
 }
 
+button a {
+    color: white;
+    text-decoration: none;
+}
+
 h1, h2, h3 , h4, h5, h6, strong, b {
     font-family: 'Avenir Next Bold', sans-serif;
 }

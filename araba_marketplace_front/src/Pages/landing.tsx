@@ -22,7 +22,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck, faPhone, faEnvelope, faArrowRightArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
 import CardOpinion from "../components/CardOpinion";
-import CarouselCoches from "../components/CarouselCoches";
+import { Link } from 'react-router-dom';
+// import CarouselCoches from "../components/CarouselCoches";
 // import CarouselPortada from "../components/CarouselPortada";
 
 
@@ -151,7 +152,9 @@ export default function LandingPage () {
                     <CardOferta />
                 </div>
                 {/* <CarouselCoches /> */}
-                <Button>Ver todas las ofertas</Button>
+                <Button>
+                    <Link to='/cars'>Ver todas las ofertas</Link> 
+                </Button>
             </section>
             <section className="ventajas">
                 <h2>Sólo son ventajas especiales</h2>
