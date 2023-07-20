@@ -11,6 +11,7 @@
     --color2: #6B315A;
     --color3: #007684;
     --color4: #FF6346;
+    --color5: azure;
 }
 
 body {
@@ -30,6 +31,33 @@ section {
 .portada {
     width: 100vw;
     height: 1fr;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.contact {
+    justify-self: flex-end;
+}
+
+.contact > div {
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    height: 48px;
+    width: 48px;
+}
+
+.whatsapp {
+    background-color: #3CB76D;
+}
+
+.telegram {
+    background-color: #3C90B7;
 }
 
 .cardsLanding {
@@ -53,6 +81,22 @@ section {
     font-size: 32px;
 }
 
+.opiniones {
+    background-color: var(--color5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.opiniones > .titulo {
+    grid-column: span 3;
+    text-align: center;
+}
+
+.cardOpinion {
+    text-align: center;
+}
+
 .marcas {
     display: flex;
     gap: 1em;
@@ -70,7 +114,11 @@ section {
     gap: 1em;
 }
 
-.ofertas > div {
+.ofertas {
+    background-color: var(--color5);
+}
+
+.carruselCoches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
@@ -87,7 +135,7 @@ section {
     flex-direction: row;
     gap: 1em;
     padding: 1em;
-    background-color: aliceblue;
+    background-color: var(--color5);
 }
 
 .satisfaccion {
@@ -114,9 +162,23 @@ section {
     color: white;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1em;
     padding: 2em 10em;
 }
 
+.contactos > div{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.contactos .icono {
+    font-size: 2em;
+}
+
+/* FOOTER */
+
 .modal-footer {
     color: white;
+    padding: 1em;
 }

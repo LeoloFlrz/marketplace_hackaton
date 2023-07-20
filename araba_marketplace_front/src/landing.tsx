@@ -15,21 +15,35 @@ import skoda from './img/logo skoda3dpi 1.svg'
 import peugeot from './img/peugeot-logo 1.svg'
 import seat from './img/seat-logo 1.svg'
 import tesla from './img/tesla-logo 1.svg'
-import CardOferta from "./components/ofertaCard";
+// import CardOferta from "./components/ofertaCard";
 import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck, faPhone, faEnvelope, faWhatsApp } from "@fortawesome/free-solid-svg-icons";
+import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons";
+import CardOpinion from "./components/CardOpinion";
+import CarouselCoches from "./components/CarouselCoches";
+import CarouselPortada from "./components/CarouselPortada";
 
 
 
 export default function LandingPage () {
     return (
         <>
-        <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
-                {/* <img src={fondo} alt="" /> */}
-               h 
-            </section>
+        <section>
+            <CarouselPortada />
+        </section>
+        {/* <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
+                <div>h</div>
+                <div className="contact">
+                    <div className="whatsapp">
+                        <FontAwesomeIcon icon={faWhatsapp} />
+                    </div>
+                    <div className="telegram">
+                        <FontAwesomeIcon icon={faTelegram} />
+                    </div>
+                </div>
+            </section> */}
             <Container>
             <section className="cardsLanding">
             <div className="cardLanding">
@@ -38,7 +52,7 @@ export default function LandingPage () {
             </div>
             <div>
                 <strong>GARANTÍA</strong>
-                <p>DE CONFIANZA</p>
+                <p>DE CONFIANZA ARABA</p>
             </div>
         </div>
         <div className="cardLanding">
@@ -47,7 +61,7 @@ export default function LandingPage () {
             </div>
             <div>
                 <strong>HOY TENEMOS</strong>
-                <p>2 COCHES NUEVOS</p>
+                <p>2 COCHES NUEVOS PARA ELEGIR</p>
             </div>
         </div>
         <div className="cardLanding">
@@ -82,7 +96,18 @@ export default function LandingPage () {
                 </div>
             </section>
             <section className="opiniones">
-
+                <div></div>
+                <div className="titulo">
+                    <h2>Las opiniones de nuestros clientes</h2>
+                </div>
+                <div>
+                    <h4>Si estás buscando coche</h4>
+                    <h2>TE PONEMOS LAS COSAS MUY FÁCILES</h2>
+                    <Button>¡QUIERO EMPEZAR A BUSCAR!</Button>
+                </div>
+                <CardOpinion />
+                <CardOpinion />
+                <CardOpinion />
             </section>
             <section className="tipoCoche">
                 <h2>¿Cómo te gustaría tu coche?</h2>
@@ -123,11 +148,12 @@ export default function LandingPage () {
             </section>
             <section className="ofertas">
                 <h2>¡Super ofertas de julio!</h2>
-                <div>
+                {/* <div>
                     <CardOferta />
                     <CardOferta />
                     <CardOferta />
-                </div>
+                </div> */}
+                <CarouselCoches />
                 <Button>Ver todas las ofertas</Button>
             </section>
             <section className="promo">
@@ -152,23 +178,32 @@ export default function LandingPage () {
                 <h2>¿NECESITAS UN ASESOR COMERCIAL?</h2>
                 <h2>Llama gratis al 987 65 43 21</h2>
                 <div>
-                    <Button className="boton1">Hola</Button>
-                    <Button className="boton2">Adiós</Button>
+                    <Button className="boton1">Quiero buscar mi coche</Button>
+                    <Button className="boton2">Quiero contactar</Button>
                 </div>
             </section>
             <section className="contactos">
                 <div>
-                    <FontAwesomeIcon icon={faPhone} />
-                    Teléfono
-                    </div>
+                    <FontAwesomeIcon icon={faPhone} className="icono" />
+                    <div className="texto">
+                        <strong>TELÉFONO: 987 65 43 21</strong>
+                        <p>De lunes a viernes de 9:00 a 20:00</p>
+                    </div>           
+                </div>
                 <div>
-                <FontAwesomeIcon icon={faWhatsApp} />
-                    WhatsApp
+                    <FontAwesomeIcon icon={faWhatsapp} className="icono" />
+                    <div className="texto">
+                        <strong>WHATSAPP</strong>
+                        <p>Contacta ahora con nuestro equipo</p>
                     </div>
+                </div>
                 <div>
-                <FontAwesomeIcon icon={faEnvelope} />
-                    Correo
-                    </div>
+                    <FontAwesomeIcon icon={faEnvelope} className="icono" />
+                    <div className="texto">
+                        <strong>EMAIL</strong>
+                        <p>Contacta por email con tu asesor</p>  
+                    </div>               
+                </div>
             </section>
         </Container>
         </>   
