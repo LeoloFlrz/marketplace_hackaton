@@ -15,7 +15,7 @@ import skoda from '../assets/img/logo skoda3dpi 1.svg'
 import peugeot from '../assets/img/peugeot-logo 1.svg'
 import seat from '../assets/img/seat-logo 1.svg'
 import tesla from '../assets/img/tesla-logo 1.svg'
-// import CardOferta from "../components/CardOferta";
+import CardOferta from "../components/CardOferta";
 import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -145,12 +145,12 @@ export default function LandingPage () {
             </section>
             <section className="ofertas">
                 <h2>¡Super ofertas de julio!</h2>
-                {/* <div>
+                <div className='carruselCoches'>
                     <CardOferta />
                     <CardOferta />
                     <CardOferta />
-                </div> */}
-                <CarouselCoches />
+                </div>
+                {/* <CarouselCoches /> */}
                 <Button>Ver todas las ofertas</Button>
             </section>
             <section className="ventajas">

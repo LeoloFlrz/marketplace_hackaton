@@ -1,24 +1,24 @@
 import Carousel from 'react-bootstrap/Carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
-import CardOferta from './CardOferta';
+import { CarCard } from './Carcard';
 
 function CarouselCoches() {
   return (
     <Carousel>
       <Carousel.Item className='carruselCoches'>
-        <CardOferta/>
-        <CardOferta/>
-        <CardOferta/>
+        <CarCard/>
+        <CarCard/>
+        <CarCard/>
       </Carousel.Item>
       <Carousel.Item className='carruselCoches'>
-        <CardOferta/>
-        <CardOferta/>
-        <CardOferta/>
+      <CarCard/>
+      <CarCard/>
+      <CarCard/>
       </Carousel.Item>
       <Carousel.Item className='carruselCoches'>
-        <CardOferta/>
-        <CardOferta/>
-        <CardOferta/>
+      <CarCard/>
+      <CarCard/>
+      <CarCard/>
       </Carousel.Item>
     </Carousel>
   );
