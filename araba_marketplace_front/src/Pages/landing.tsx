@@ -1,35 +1,36 @@
-import React from "react";
-import fondo from './img/foto_portada.jpg'
-import familiar from './img/01-familiar.svg'
-import berlina from './img/02-berlina.svg'
-import cabrio from './img/03-cabrio.svg'
-import monovolumen from './img/04-monovolumen.svg'
-import todoterreno from './img/05-todoterreno-suv.svg'
-import deportivo from './img/06-deportivo.svg'
-import compacto from './img/07-compacto.svg'
-import industrial from './img/08-industrial.svg'
-import dacia from './img/DACIA.svg'
-import bmw from './img/bmw-logo-2022 1.svg'
-import ford from './img/ford.svg'
-import skoda from './img/logo skoda3dpi 1.svg'
-import peugeot from './img/peugeot-logo 1.svg'
-import seat from './img/seat-logo 1.svg'
-import tesla from './img/tesla-logo 1.svg'
-import CardOferta from "./components/ofertaCard";
+import fondo from '../assets/img/foto_portada.jpg'
+import familiar from '../assets/img/01-familiar.svg'
+import berlina from '../assets/img/02-berlina.svg'
+import cabrio from '../assets/img/03-cabrio.svg'
+import monovolumen from '../assets/img/04-monovolumen.svg'
+import todoterreno from '../assets/img/05-todoterreno-suv.svg'
+import deportivo from '../assets/img/06-deportivo.svg'
+import compacto from '../assets/img/07-compacto.svg'
+import industrial from '../assets/img/08-industrial.svg'
+import dacia from '../assets/img/DACIA.svg'
+import bmw from '../assets/img/bmw-logo-2022 1.svg'
+import ford from '../assets/img/ford.svg'
+import skoda from '../assets/img/logo skoda3dpi 1.svg'
+import peugeot from '../assets/img/peugeot-logo 1.svg'
+import seat from '../assets/img/seat-logo 1.svg'
+import tesla from '../assets/img/tesla-logo 1.svg'
+import CardOferta from "../components/CardOferta";
+import { Button } from "react-bootstrap";
 import { Container } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCarSide, faMedal, faMoneyCheckAlt, faPersonCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import {  faMedal,faCarSide,faMoneyCheckAlt} from "@fortawesome/free-solid-svg-icons";
+import '../styles.css'
 
 
 
 export default function LandingPage () {
     return (
         <>
-        <section className="portada" style={{ backgroundImage: `url(${fondo})` }}>
-                {/* <img src={fondo} alt="" /> */}
-               h 
+        <section className="portada" >
+                <img src={fondo} alt="" height={'100%'} style={{margin:'-3%'}}/>
+                
             </section>
-            <Container>
+            <Container> 
             <section className="cardsLanding">
             <div className="cardLanding">
             <div className="icono">
@@ -49,15 +50,7 @@ export default function LandingPage () {
                 <p>2 COCHES NUEVOS</p>
             </div>
         </div>
-        <div className="cardLanding">
-            <div className="icono">
-            <FontAwesomeIcon icon={faPersonCircleCheck} />
-            </div>
-            <div>
-                <strong>¿QUIERES VENIR</strong>
-                <p>A RECOGERLO?</p>
-            </div>
-        </div>
+        
         <div className="cardLanding">
             <div className="icono">
                 <FontAwesomeIcon icon={faMoneyCheckAlt} />
@@ -127,16 +120,11 @@ export default function LandingPage () {
                     <CardOferta />
                     <CardOferta />
                 </div>
-                <button>Ver todas las ofertas</button>
+                <Button>Ver todas las ofertas</Button>
             </section>
-            <section className="promo">
-                <img src="" alt="" />
-                <div>
-                    <h2>VEN A RECOGER TU COCHE Y</h2>
-                    <h2>TE INVITAMOS A CONOCER NUESTRA CIUDAD</h2>
-                </div>
-            </section>
-        </Container>
-        </>   
+          </Container>
+            
+        
+        </>
     )
 }

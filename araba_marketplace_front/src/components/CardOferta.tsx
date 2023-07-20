@@ -1,5 +1,5 @@
-import React from 'react'
-import car from '../img/CAR-1.svg'
+
+import car from '../assets/img/CAR-1.svg'
 
 export default function CardOferta () {
     return (
