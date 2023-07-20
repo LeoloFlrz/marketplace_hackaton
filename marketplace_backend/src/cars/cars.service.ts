@@ -2,8 +2,6 @@
 import { Injectable } from '@nestjs/common';
 import * as data from './../../data/data.json';
 
-// import { CreateCarDto } from './dto/create-car.dto';
-// import { UpdateCarDto } from './dto/update-car.dto';
 
 @Injectable()
 export class CarsService {
@@ -13,7 +11,6 @@ export class CarsService {
   }
 
   findOne(id: string) {
-    // return `This action returns a #${id} beer`;
     return data.find((e) => e._id == id);
   }
 

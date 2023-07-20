@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import Contact from './Contact';
-import './css/CarCard.css';
-import { CarCard } from './Carcard';
+
 
 // import React, { useState } from 'react';
 // import Button from 'react-bootstrap/Button';
