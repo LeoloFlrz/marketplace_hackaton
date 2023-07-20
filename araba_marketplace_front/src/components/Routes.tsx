@@ -18,7 +18,6 @@ const ErrorPage=()=> {
   );
 }
 
-
 export const router = createBrowserRouter([
     {
       path: "/",
@@ -29,6 +28,10 @@ export const router = createBrowserRouter([
       path: "/cars",
       element: <AllCars/>,
     },
+    // {
+    //   path: "/cars/{id}",
+    //   element: <Cardetail id={""}/>,
+    // },
     // {
     //   path: "/cars/:id",
     //   element:   

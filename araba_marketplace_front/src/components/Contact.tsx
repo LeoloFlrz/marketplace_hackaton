@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import './css/Contacto.css';
+import '../components/css/Contacto.css';
 import logo from '../assets/Logo_optionOne.svg';
 
 const Contact = () => {
@@ -26,11 +26,18 @@ const Contact = () => {
           <Form.Text className="text-muted">
           </Form.Text>
         </Form.Group>
-
+       
         <label className='message'>
           <textarea className='message' name="message" placeholder='Write your message here'></textarea>
         </label>
-              <br />
+         
+              <Form.Check
+          required
+          label="Agree to terms and conditions"
+          feedback="You must agree before submitting."
+          feedbackType="invalid"
+        />
+        <br />
         <Button variant="light" type="submit" id='enviado'>
           <strong>Submit</strong>
         </Button>

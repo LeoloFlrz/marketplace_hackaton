@@ -1,7 +1,26 @@
-.carCard{
+* {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+div.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    padding-top: 5px;
+}
+
+.modal-content {
+    position: absolute;
+}
+
+.carCard.car{
     background-color: white;
-    width: 100px;
+    width: 110px;
     height: 400px;
+    gap: 2px 2px;
+    object-fit: contain;
+    margin-top: 10px;
 }
 
 .cardList{
@@ -28,13 +47,14 @@
 
 .fullprice{
     color: #DD5336;
+    text-shadow: 0.50px 0.50px #0808089e;
     font-weight: bolder;
     font-size: large;
     margin: 0;
 }
 
 .payments{
-    color: #63C8E5;
+    color: #27c2ed;
     font-size: small;
     margin: 0;
 }
@@ -43,15 +63,43 @@
     width: 150px;
     height: 40px;
     padding: 10px 20px;
-    background-color: #273B81;
+    background-color: #DD5336;
+    text-shadow: 1px 1px #080808;
     color: white;
     border: none;
     border-radius: 2px;
     cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
 }
 
 .button:hover{
-    background-color: rgb(175, 187, 232);
-    color: #273B81;
-    
+    background-color: #d79587;
+}
+
+#secondbutton {
+    background-color: #DD5336;
+}
+
+.modal-header {
+    color: aliceblue;
+    background-color: #070707c8;
+}
+
+.modal-content.modal.show {
+    background-color: #08080800;
+}
+
+@media screen and (max-width: 1000px) {
+
+    div.row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .carCard.car{
+        width: 110px;
+        height: 400px;
+    }
+
 }

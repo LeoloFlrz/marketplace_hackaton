@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {CarCard} from './CarCard';
+import {CarCard} from './Carcard';
 
 interface Car {
   _id: string;
@@ -10,11 +10,11 @@ interface Car {
   horsepower: number;
   fuelType: string;
   price: number;
-  image_url:"string"
+  image_url:string;
 }
 
 
-const  CarList: React.FC = ()=> {
+export const  CarList: React.FC = ()=> {
   const [cars, setCars] = useState<Car[]>([]);
 
   useEffect(() => {
@@ -36,4 +36,3 @@ const  CarList: React.FC = ()=> {
   );
 };
 
-export default CarList;
