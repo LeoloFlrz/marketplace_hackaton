@@ -1,13 +1,10 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import './carcard.css';
-import skoda_prueba from '../assets/skoda_prueba.jpg';
-import puerta from '../assets/puerta coche3dpi 2.svg';
-import check from '../assets/check3dpi 2.svg';
-import taco from '../assets/tacometro3dpi 1.svg';
-import comb from '../assets/gasolina3dpi 1.svg';
+import './css/CarCard.css';
+import skoda_prueba from './assets/skoda_prueba.jpg';
 import React from 'react';
-     
+
+
 interface Car {
   _id: string;
   model: string;
@@ -34,28 +31,13 @@ interface CarCardProps {
         <Card.Title>{model}</Card.Title>
         <div className='carCharacs'>
           <ul className='cardList'>
-            <li>
-              <img src = {puerta} width="15" height="15"/>
-              {doors} PUERTAS
-              </li>
-            <li>
-              <img src = {check} width="15" height="15"/>
-              {year}
-            </li>
+            <li>{doors} PUERTAS</li>
+            <li>{year}</li>
           </ul>
           <ul className='cardList'>
-            <li>
-              <img src = {car} width="15" height="15"/>
-              {km} KM
-            </li>
-            <li>
-              <img src = {taco} width="15" height="15"/>
-              {horsepower} CV
-            </li>
-            <li>
-              <img src = {comb} width="15" height="15"/>
-              {fuelType}
-            </li>
+            <li>{km} KM</li>
+            <li>{horsepower} CV</li>
+            <li>{fuelType}</li>
           </ul>
         </div>
         <div className='pricesandbutton'>

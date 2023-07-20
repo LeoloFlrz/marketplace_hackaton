@@ -1,0 +1,57 @@
+.carCard{
+    background-color: white;
+    width: 100px;
+    height: 400px;
+}
+
+.cardList{
+    list-style: none;
+    font-size: small;
+}
+
+.carCharacs{
+    display: flex;
+    flex-direction: row;
+}
+
+.pricesandbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.prices{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+}
+
+.fullprice{
+    color: #DD5336;
+    font-weight: bolder;
+    font-size: large;
+    margin: 0;
+}
+
+.payments{
+    color: #63C8E5;
+    font-size: small;
+    margin: 0;
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #273B81;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(175, 187, 232);
+    color: #273B81;
+    
+}
