@@ -1,19 +1,18 @@
 /* eslint-disable prettier/prettier */
 import { Controller, Get, Param } from '@nestjs/common';
 import { CarsService } from './cars.service';
-import { Car } from '../cars/cars.model';
+import { Car } from '../cars/schemas/car.schema';
 
 @Controller('cars')
 export class CarsController {
   constructor(private readonly carsService: CarsService) {}
 
   @Get()
-  findAll(): Promise<Car[]> {
+async  findAll(): Promise<Car[]> {
     return this.carsService.findAll();
   }
-
   @Get(':id')
-  findOne(@Param('id') id: string): Promise<Car> {
+  async findOne(@Param('id') id: string): Promise<Car> {
     return this.carsService.findOne(id);
   }
 
@@ -26,7 +25,7 @@ export class CarsController {
   }
 
   @Get('search/:keyword')
-  searchByKeyword(@Param('keyword') keyword: string): Promise<Car[]> {
+ async searchByKeyword(@Param('keyword') keyword: string): Promise<Car[]> {
     return this.carsService.searchByKeyword(keyword);
   }
 }
