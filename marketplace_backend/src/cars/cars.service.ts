@@ -7,9 +7,6 @@ import { Model } from 'mongoose';
 @Injectable()
 export class CarsService {
   constructor(@InjectModel(Car.name) private carModel: Model<Car>) { }
-  // async findAll(): Promise<Car[]> {
-  //   return this.carModel.find().exec();
-  // }
 async findAll(): Promise<Car[]> {
   return this.carModel.find().exec();
 }
