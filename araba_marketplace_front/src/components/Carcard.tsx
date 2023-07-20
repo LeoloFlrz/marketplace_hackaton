@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './css/CarCard.css';
+import skoda_prueba from './assets/skoda_prueba.jpg';
 import React from 'react';
 
 
